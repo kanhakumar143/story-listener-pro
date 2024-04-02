@@ -14,9 +14,9 @@ const useOnPlay = (songs: Song[]) => {
         if(!user) { return authModal.onOpen(); }
 
         // For show subscription modal
-        if(!subscription){
-            subscribeModal.onOpen()
-        }
+        // if(!subscription){
+        //     subscribeModal.onOpen()
+        // }
 
         player.setId(id);
         player.setIds(songs.map((song)=> song.id));

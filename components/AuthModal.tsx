@@ -49,7 +49,7 @@ const AuthModal = () => {
                     }
                 }}
                 theme="dark"
-                providers={["github", "google", "facebook"]}
+                providers={["github"]}
                 magicLink
             />
         </Modal>
