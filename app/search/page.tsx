@@ -9,6 +9,10 @@ interface SearchProps {
     }
 }
 
+export const metadata = {
+    title : "Search"
+}
+
 export const revalidate = 0;
 
 const Search = async ({searchParams}:SearchProps) => {

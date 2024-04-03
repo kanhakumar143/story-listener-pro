@@ -1,6 +1,12 @@
 import Header from "@/components/Header"
 import AccountContent from "./components/AccountContent"
 
+export const metadata = {
+  title : "Account"
+}
+
+export const revalidate = 0;
+
 const Account = () => {
   return (
     <div 

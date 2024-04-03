@@ -8,12 +8,16 @@ import ToasterProvider from '@/providers/ToasterProvider'
 import getSongsById from '@/actions/getSongsByUserId'
 import Player from '@/components/Player'
 import getActiveProductWithPrice from '@/actions/getActiveProductWithPrice'
+import { Metadata } from 'next'
 
 const font = Figtree({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Spotify clone',
-  description: 'Listen to music!',
+export const metadata: Metadata = {
+  title: {
+    default: "Story Listener Pro",
+    template: "Story Listener Pro | %s"
+  },
+  description: 'Listen to story!',
 }
 
 export const revalidate = 0;
