@@ -18,12 +18,13 @@ const Slider: React.FC<SliderProps> = ({
 
   return (
     <RadixSlider.Root
-        className="relative flex items-center select-none touch-none w-full h-10"
+        className="relative flex items-center select-none touch-none w-full h-10 cursor-pointer"
         defaultValue={[1]}
         value={[value]}
         max={1}
         step={0.1}
         aria-label="Volume"
+        onValueChange={HandleChange}
     >
         <RadixSlider.Track
             className="bg-neutral-600 relative grow rounded-full h-[3px]"
