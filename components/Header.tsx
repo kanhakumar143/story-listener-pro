@@ -44,7 +44,7 @@ const Header: React.FC<headerProps> = ({
     return (
         <div
             className={twMerge(`
-                h-fit bg-gradient-to-b from-emerald-800 p-6
+                h-fit bg-gradient-to-b from-indigo-800 p-6
             `, className)}
         >
             <div className="w-full mb-4 flex items-center justify-between">
@@ -63,10 +63,16 @@ const Header: React.FC<headerProps> = ({
                     </button>
                 </div>
                 <div className="flex md:hidden gap-x-2 items-center">
-                    <button className="rounded-full p-2 bg-white flex items-center hover:opacity-75 transition">
+                    <button 
+                        onClick={() => router.push('/')}
+                        className="rounded-full p-2 bg-white flex items-center hover:opacity-75 transition"
+                    >
                         <HiHome size={20} className="text-black" />
                     </button>
-                    <button className="rounded-full p-2 bg-white flex items-center hover:opacity-75 transition">
+                    <button 
+                        onClick={() => router.push('/search')}
+                        className="rounded-full p-2 bg-white flex items-center hover:opacity-75 transition"
+                    >
                         <BiSearch size={20} className="text-black" />
                     </button>
                 </div>
