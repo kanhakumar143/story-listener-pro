@@ -114,7 +114,7 @@ const UploadModal = () => {
 
     return (
         <Modal 
-            title="Add a song"
+            title="Add a story"
             description="Upload an mp3 file here"
             isOpen={uploadModal.isOpen}
             onChange={onChange}
@@ -124,19 +124,19 @@ const UploadModal = () => {
                     id='title' 
                     disabled={isLoading} 
                     {...register('title', {required:true})} 
-                    placeholder={'Song Title'} 
+                    placeholder={'Story Title'} 
                 />
 
                 <Input 
                     id='author' 
                     disabled={isLoading} 
                     {...register('author', {required:true})} 
-                    placeholder={'Song Author'} 
+                    placeholder={'Story Author'} 
                 />
 
                 <div>
                     <div className="pb-1">
-                        Select a song file
+                        Select a story file
                     </div>
                     <Input 
                         id='song' 
